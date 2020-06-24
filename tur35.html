@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variablw/custom properties</title>
+    <style>
+        /*the root content work all css folder*/
+        
+         :root {
+            --primary-color: blue;
+            --danger-color: red;
+            --maxw: 233px;
+            --boxshasow: green;
+        }
+        
+        .box {
+            /*the voilet work is one class content system*/
+            width: 200px;
+            height: 200px;
+            background-color: var(--primary-color);
+            border: 2px solid red;
+            box-shadow: 3px 3px var( --boxshasow);
+            margin: 2px 9px;
+        }
+        
+        .container {
+            width: var(--maxw);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            background-color: var(--danger-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+</body>
+
+</html>

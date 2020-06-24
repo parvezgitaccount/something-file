@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyfranes and animation</title>
+    <style>
+        .container {
+            /* display: flex; */
+            background-color: yellowgreen;
+        }
+        
+        .box {
+            background-color: gray;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation: parvez;
+            animation: parvez1;
+            animation-duration: 1s;
+            /* if you ranning the animation auru run regular you scouce infinite */
+            animation-iteration-count: infinite;
+            /* animation-fill mode have a foeword option animation-fill-mode: alternate; */
+            animation-timing-function: ease-in-out;
+            /* animation-delay: 3s; if you yse thid that time fast time wait 3 seckecd will run    this */
+            /* animation-direction: reverse;  */
+            animation-direction: alternate;
+        }
+        
+        @keyframes parvez {
+            from {
+                width: 200px;
+            }
+            to {
+                width: 1000px;
+            }
+        }
+        
+        @keyframes parvez1 {
+            0% {
+                top: 0;
+                left: -250px;
+                background-color: #919191;
+            }
+            25% {
+                top: 250px;
+                left: -250px;
+                color: red;
+                background-color: tomato;
+            }
+            50% {
+                top: 250px;
+                left: 100%;
+            }
+            75% {
+                top: 0px;
+                left: 100%;
+                background-color: blueviolet;
+            }
+            100% {
+                top: 0;
+                left: -250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            this is a box
+        </div>
+    </div>
+
+</body>
+
+</html>

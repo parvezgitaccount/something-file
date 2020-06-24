@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute and child pseudo selector</title>
+    <style>
+        .container {
+            margin: auto;
+            width: 300px;
+        }
+        
+        input {
+            display: block;
+        }
+        /*this is spacip attobute in the tag*/
+        
+        input[type=text] {
+            padding: 30px 30px;
+            border: 3px solid green;
+        }
+        
+        input[type=email] {
+            border: 2px solid black;
+        }
+        
+        a[target] {
+            font-size: 45px;
+            color: crimson;
+        }
+        
+        a[target='pk'] {
+            font-size: 40px;
+            color: green;
+            text-decoration: none;
+        }
+        
+        a[target='pk']:hover {
+            font-size: 40px;
+            color: gray;
+            text-decoration: none;
+        }
+        /*nth child attobute*/
+        /*this will apply css for  thard child*/
+        
+        li:nth-child(1) {
+            color: white;
+            font-size: 40px;
+        }
+        
+        li:nth-child(1):hover {
+            color: green;
+        }
+        
+        li:nth-child(3) {
+            color: cyan;
+        }
+        
+        li:nth-child(2n+0) {
+            color: red;
+        }
+        /*the odd child is css tag here the odd bejor number*/
+        
+        li:nth-child(odd) {
+            background-color: yellow;
+        }
+        /*the even child is css tag here even code is bejor gurr number*/
+        
+        li:nth-child(even) {
+            background-color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            <a href="3" target="blank">parvez</a><br>
+            <a href="3" target="pk">parvez2</a>
+        </h1>
+        <form action="" class="from control">
+            <input type="text" placeholder="inter your name">
+            <input type="email" placeholder="inter your email">
+            <input type="password" placeholder="iinter your password">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+
+            <li class="item" id="item1">item 1</li>
+            <li class="item" id="item2">item 2</li>
+            <li class="item" id="item3">item 3</li>
+            <li class="item" id="item4">item 4</li>
+            <li class="item" id="item5">item 5</li>
+            <li class="item" id="item6">item 6</li>
+            <li class="item" id="item7">item 7</li>
+            <li class="item" id="item8">item 8</li>
+            <li class="item" id="item9">item 9</li>
+            <li class="item" id="item10">item 10</li>
+            <li class="item" id="item11">item 11</li>
+            <li class="item" id="item12">item 12</li>
+        </ul>
+    </div>
+</body>
+
+</html>

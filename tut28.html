@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox turial</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            height: 250px;
+            width: 100%;
+            display: flex;
+            /* the row is float left align target */
+            /* flex-direction: row; */
+            /* flex colun is buttom to top up */
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse;
+            float: right;
+            position: absolute; */
+            /* the wraf if you use that time you scrool the page that time no checge your height paddig  */
+            /* flex-wrap: wrap;
+            flex-wrap: wrap-reverse; */
+            /* flex-flow: row-reverse wrap; */
+            /* justify-content: center; */
+            /* space butten is a space your inline tag element */
+            /* justify-content: space-around; */
+            /* the space evenly is a you all tag orginal space select  */
+            /* justify-content: space-evenly; */
+            /* soman lavel aroun here around */
+            /* justify-content: space-around; */
+            /* vartically center  */
+            /* flex-wrap: wrap;
+            align-items: center;
+            align-items: flex-end;
+            align-items: flex-start;
+            align-items: stretch; */
+        }
+        
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin: 2px 5px;
+            display: inline-block;
+            text-align: center;
+        }
+        /* heiar the order leter show up number  */
+        
+        #item1 {
+            /* order: 1; */
+            /* flex shrink joto rank joto boro korve scroolkorle toto choto hobe  */
+            /* flex-shrink: 3; */
+            color: transparent
+        }
+        
+        #item2 {
+            /* order: 2; */
+            /* flex-grow: 3; */
+            flex-basis: 320px;
+            /* when flex diraction is set row flex-basis will control width  */
+            /* when flex diraction is set ti colum flex basiswill control height  */
+        }
+        
+        #item3 {
+            /* flex-grow: 2; */
+            /* flex: 2 2 230px; */
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>this is a flex box turial</h1>
+    <div class="container">
+        <div class="item" id="item1">frist box</div>
+        <div class="item" id="item2">secend box</div>
+        <div class="item" id="item3">third box</div>
+        <!-- <div class="item" id="item4">fourth box</div>
+        <div class="item" id="item5">fifth box</div>
+        <div class="item" id="item6">six box</div> -->
+    </div>
+
+</body>
+
+</html>

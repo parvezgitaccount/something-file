@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fast fitness file</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@1,300&family=Oswald&display=swap" rel="stylesheet">
+    <style>
+        /* css reset */
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(tut26logo.jpg);
+            font-family: 'Crimson Pro', serif;
+        }
+        
+        .left {
+            position: absolute;
+            left: 14px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid red; */
+        }
+        
+        .left div {
+            text-align: center;
+            color: gray;
+            font-size: 26px;
+        }
+        
+        .left img {
+            width: 150px;
+            height: 60px;
+        }
+        
+        .mid {
+            width: 42%;
+            margin: 20px auto;
+            /* border: 2px solid green; */
+            display: block;
+        }
+        
+        .right {
+            position: absolute;
+            right: 14px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid red; */
+        }
+        
+        .navbar {
+            display: inline-block;
+        }
+        
+        .navbar li {
+            display: inline-block;
+            font-size: 30px;
+        }
+        
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 10px;
+        }
+        
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: gray;
+        }
+        
+        .btn {
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 3px 4px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: 'Crimson Pro', serif;
+        }
+        
+        .btn:hover {
+            background-color: rgb(46, 42, 42);
+        }
+        
+        .container {
+            border: 3px solid gray;
+            padding: 10px 20px;
+            margin: 100px 30px;
+            width: 38%;
+            border-radius: 15px;
+        }
+        
+        .form-group {
+            border: transparent;
+        }
+        
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 300px;
+            padding: 6px;
+            font-size: 20px;
+            border: 2px solid black;
+            margin: 5px auto;
+            background-color: none;
+            border-radius: 8px;
+            font-family: 'Crimson Pro', serif;
+            overflow: hidden;
+            background-color: none;
+        }
+        
+        .container h1 {
+            text-align: center;
+            color: white;
+        }
+        
+        .container .btn {
+            width: 300px;
+            margin: auto;
+            display: block;
+        }
+        
+        .container .btn:hover {
+            background-color: gray;
+        }
+    </style>
+</head>
+<header class="header">
+    <!-- left box for logo  -->
+    <div class="left">
+        <img src="tut26.jpg">
+        <div>parvez fitness</div>
+    </div>
+    <!-- mid box for navbar  -->
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">home</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">fitness</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </div>
+    <!-- box for   right  button -->
+    <div class="right">
+        <button class="btn">cll us now</button>
+        <button class="btn">email</button>
+    </div>
+
+</header>
+
+<div class="container">
+    <h1>join the best gym on hagigonj</h1>
+    <form action="noaction-php">
+        <div class="form-group">
+            <input type="text" class="text" placeholder="enter your name">
+
+        </div>
+        <div class="form-group">
+            <input type="text" class="text" placeholder="ecter your role">
+
+        </div>
+        <div class="form-group">
+            <input type="text" class="text" placeholder="ecter your gender">
+
+        </div>
+        <div class="form-group">
+            <input type="text" class="text" placeholder="ecter your branch">
+
+        </div>
+        <button class="btn">buttton</button>
+    </form>
+</div>
+
+<body>
+
+</body>
+
+</html>

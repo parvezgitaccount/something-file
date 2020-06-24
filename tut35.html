@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variables/custom properties</title>
+    <style>
+        /* this is a root element this is css tag hide becouse upload problem ob git  */
+        /* :root {
+            --box-color: blue;
+            --border-color: 3px solid green;
+            --maxw: 800px;
+            l
+        } */
+        
+        .container {
+            display: flex;
+            align-items: center;
+            margin: auto;
+            justify-content: center;
+            background-color: red;
+        }
+        
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-color);
+            margin: 2px 4px;
+            border: var(--border-color);
+            /* width: var( --maxw); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+</body>
+
+</html>

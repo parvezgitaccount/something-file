@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>befofe and after pseudo selector</title>
+    <style>
+        body {
+            margin: 0;
+            margin: 0;
+            background-color: black;
+            color: white;
+        }
+        
+        header::before {
+            background: url(tut26logo.jpg) no-repeat center center/cover;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.5;
+        }
+        
+        section {
+            /* border: 3px solid green; */
+            display: flex;
+            flex-direction: column;
+            margin: 10px 15px;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 10px;
+        }
+        
+        .navication {
+            font-size: 20px;
+            display: flex;
+            /* border: 2px solid gray; */
+            ;
+        }
+        
+        li {
+            list-style: none;
+            padding: 10px 20px;
+        }
+        
+        li:hover {
+            border-bottom: 2px solid gray;
+            color: tomato
+        }
+        /* section::before {
+            content: "this is a content"
+        } */
+        
+        h1 {
+            font-size: 2rem;
+        }
+        
+        p {
+            text-align: center;
+            padding: 20px 10px;
+            justify-content: justify;
+        }
+        
+        hr {
+            color: 3px solid green;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navication">
+                <li class="item1">home</li>
+                <li class="item2">about us</li>
+                <li class="item3">services</li>
+                <li class="item4">contact</li>
+            </ul>
+        </nav>
+        <section>
+            <h1>wel come to code with parvez</h1>
+            <hr>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid reiciendis eum aperiam, sunt, dicta nobis voluptatum expedita quo incidunt laborum, eveniet praesentium inventore cumque possimus? Ullam harum nam provident iste consequuntur
+                quaerat veniam laudantium.</p>
+
+        </section>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css transform</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+            height: 80vh;
+        }
+        
+        .box1 {
+            background-color: #91dafa;
+            border: 2px solid #92dafa;
+            border-radius: 8px;
+            height: 50px;
+            width: 50px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            /* transform: rotate(45deg); */
+            transition: all 1s ease-in-out;
+        }
+        
+        .box1:hover {
+            /* transform: rotate(45deg); */
+            /* transform: skew(40deg);  angle the box*/
+            /* transform: scale(3); joto number lekbe toto gun boeo hobe */
+            transform: translate(10px, 20px);
+        }
+        
+        .box2 {
+            background-color: #91dafa;
+            border: 2px solid #92dafa;
+            border-radius: 8px;
+            height: 50px;
+            width: 50px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            /* transform: rotate(45deg); */
+            transition: all 1s ease-in-out;
+        }
+        
+        .box2:hover {
+            /* transform: rotate(45deg); */
+            /* transform: skew(40deg);  angle the box*/
+            transform: scale(3);
+            /* transform: translate(10px, 20px); */
+        }
+        
+        .box3 {
+            background-color: #91dafa;
+            border: 2px solid #92dafa;
+            border-radius: 8px;
+            height: 50px;
+            width: 50px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            /* transform: rotate(45deg); */
+            transition: all 1s ease-in-out;
+        }
+        
+        .box3:hover {
+            /* transform: rotate(45deg); */
+            transform: skew(40deg);
+            /* transform: scale(3); */
+            /* transform: translate(10px, 20px); */
+        }
+        
+        .box4 {
+            background-color: #91dafa;
+            border: 2px solid #92dafa;
+            border-radius: 8px;
+            height: 50px;
+            width: 50px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            /* transform: rotate(45deg); */
+            transition: all 1s ease-in-out;
+        }
+        
+        .box4:hover {
+            transform: rotate(45deg);
+            /* transform: skew(40deg);  angle the box*/
+            /* transform: scale(3); */
+            /* transform: translate(10px, 20px); */
+        }
+        
+        .box5 {
+            background-color: #91dafa;
+            border: 2px solid #92dafa;
+            border-radius: 8px;
+            height: 50px;
+            width: 50px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            /* transform: rotate(45deg); */
+            transition: all 1s ease-in-out;
+        }
+        
+        .box5:hover {
+            /* transform: rotate(45deg); */
+            /* transform: skew(40deg);  angle the box*/
+            /* transform: scale(3); */
+            /* transform: translate(10px, 20px); */
+            transform: skew(30deg);
+        }
+        
+        .box6 {
+            background-color: #91dafa;
+            border: 2px solid #92dafa;
+            border-radius: 8px;
+            height: 50px;
+            width: 50px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            /* transform: rotate(45deg); */
+            transition: all 1s ease-in-out;
+            color: transparent;
+        }
+        
+        .box6:hover {
+            /* transform: rotate(45deg); */
+            /* transform: skew(40deg);  angle the box*/
+            /* transform: scale(3); */
+            /* transform: translate(10px, 20px); */
+            transform: rotate(360deg);
+            background-color: black;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">box1</div>
+        <div class="box2">box3</div>
+        <div class="box3">box4</div>
+        <div class="box4">box4</div>
+        <div class="box5">box5</div>
+        <div class="box6">box6</div>
+    </div>
+
+</body>
+
+</html>

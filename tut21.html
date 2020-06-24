@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignment</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .container {
+            width: 500px;
+            margin: auto;
+            border: 3px solid blue;
+            background-color: tomato;
+        }
+        
+        .item {
+            border: 3px solid gray;
+            margin: 20px 3px;
+            padding: 20px 3px;
+            background-color: green;
+        }
+        
+        #frouits {
+            width: 48%;
+            float: left;
+        }
+        
+        #computer {
+            width: 48%;
+            float: right;
+        }
+        
+        #stationary {
+            width: 100%;
+            /* float: left; */
+            /* clear: left */
+            clear: both;
+        }
+        
+        p h1 {
+            text-align: justify;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>wel come my clear both section</h2>
+        <div id="frouits" class="item">
+            <h3>fruits</h3>
+            <p id="frouitspara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quod saepe, beatae dolor sapiente quia provident temporibus Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quod saepe, beatae dolor sapiente quia provident temporibus
+            </p>
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="frouitspara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quod saepe, beatae dolor sapiente quia provident temporibus Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quod saepe, beatae dolor sapiente quia provident temporibus Lorem
+                ipsum dolor sit amet consectetur a Lorem ipsum dolor sit amet consectetur a Lorem ipsum dolor sit amet consectetur a Lorem ipsum dolor sit amet consectetur a
+            </p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="frouitspara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quod saepe, beatae dolor sapiente quia provident temporibus Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quod saepe, beatae dolor sapiente quia provident temporibus
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
