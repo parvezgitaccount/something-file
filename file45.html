@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 'navbar navbar navbar navbar' 'aside aside aside section' ' footer footer footer footer ';
+        }
+        
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: red;
+            }
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas: 'navbar navbar navbar navbar' 'aside aside aside aside' 'section section section section'' footer footer footer footer ';
+            }
+        }
+        
+        @media only screen and (min-width:300px) and (max-width: 600px) {
+            body {
+                background-color: rgb(24, 185, 177);
+            }
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas: 'navbar navbar navbar navbar' 'aside aside aside aside' 'section section section section'' footer footer footer footer ';
+            }
+            #footer {
+                display: none;
+            }
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+        
+        @media only screen and (min-width:600px) and (max-width: 900px) {
+            body {
+                background-color: rgb(173, 17, 51);
+            }
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas: 'navbar navbar navbar section' 'aside aside aside aside' 'section section section section'' footer footer footer footer ';
+            }
+        }
+        
+        @media only screen and (min-width:900px) and (max-width: 1500px) {
+            body {
+                background-color: rgb(24, 185, 24);
+            }
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas: 'navbar navbar navbar navbar' 'aside aside aside section' 'footer footer footer footer ';
+            }
+        }
+        
+        @media only screen and (min-width:1500px) and (max-width: 2300px) {
+            body {
+                background-color: rgb(24, 185, 24);
+            }
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas: 'navbar navbar navbar section' 'aside aside aside aside' 'section section section section'' footer footer footer footer';
+            }
+        }
+        
+        .bdr {
+            border: 2px solid gray;
+            padding: 20px;
+            background-color: darkblue;
+            /* font-size: 30px; */
+            color: blanchedalmond;
+            font-style: italic;
+        }
+        
+        #navbar {
+            grid-area: navbar;
+        }
+        
+        #section {
+            grid-area: section;
+        }
+        
+        #aside {
+            grid-area: aside;
+        }
+        
+        #footer {
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div id="navbar" class="bdr">
+            <span>fast </span>
+            <span>fast </span>
+            <span>fast </span>
+            <span>fast </span>
+            <span>fast </span>
+            <span>fast </span>
+        </div>
+        <div id="section" class="bdr">
+            this is a section area
+        </div>
+        <div id="aside" class="bdr">
+            <h1>this is a section area</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati eos perferendis tempore dicta doloribus dignissimos provident, quod non, debitis nostrum expedita alias, eius sequi nobis dolores earum. Provident, odit aliquam?Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Amet nihil officia ipsum, eligendi voluptas in asperiores commodi repellat? Dolor quaerat ducimus eum ipsum voluptate! Doloribus cumque laboriosam vel et excepturi id pariatur eaque!loram Lorem,
+                sapiente!
+            </p>
+        </div>
+        <div id="footer" class="bdr">footer area</div>
+    </div>
+</body>
+
+</html>

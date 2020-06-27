@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> string function locekd </title>
+    <style></style>
+</head>
+
+<body>
+
+    <script>
+        var str = "this is a string";
+        console.log(str.toLowerCase());
+        // console.log(str.toUpperCase());
+        console.log(str);
+        // index of function is tracked the sentence word position 
+        // srt mane hosse protom teke koto no a tomer a word ta ase
+        var position = str.indexOf('is');
+        console.log(position)
+            // last mane hosse protom teke koto no a tomer a word ta ase
+            // jodi var a kono id akbar tag hoy tahole 2 no bare var nah diye jodi id r nam dei kaj hobe      
+        position = str.lastIndexOf('is');
+        console.log(position)
+
+        //substring from a string salaicing , komar betore j koita word takeb oi koita wor
+        var substr = str.slice(1, 8);
+        console.log(substr)
+            //anather substring mathod ai method nagetive method nite pare nah
+        var substr = str.substring(1, 8);
+        console.log(substr)
+            //str mane hoss kon jayga teke tomer gona suru kora hobe
+        var substr1 = str.substr(1, 8);
+        console.log(substr1)
+            //jodi akta string ar modde onna arek ta string dite hobe tokon ai strig use korte hobr
+
+        var replaced = str.replace('string', 'parvez');
+        console.log(str)
+        console.log(replaced)
+            // convart you word style upparcase and lowercse 
+        console.log(replaced.toUpperCase());
+        console.log(str.toLowerCase());
+        //  concate methote concate method a notun kore word add kora jay
+        var newString = str.concat(' this way concate string');
+        console.log(newString)
+
+        //this method remove the white space surete ar sese sob space soriya fele
+        var strWithWhitespaces = "    this is      whitespacs         ";
+        console.log(strWithWhitespaces);
+        console.log(strWithWhitespaces.trim())
+
+        // charAT hosse kon id r koto no word ber korbe 
+        var kotono = str.charAt(5);
+        console.log(kotono)
+            //str ar modde p koto no a ase seta ber korte hobe tar function hole carcodeAt
+
+        var kotonoaase = str.charCodeAt(8);
+        console.log(kotonoaase)
+            // code ber korar arekta sohoj upay ase
+        console.log(str[1]);
+    </script>
+</body>
+
+</html>
+
+</html>
