@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script sertimeout on celar time out</title>
+
+</head>
+
+<body>
+    <div class="comtainer">
+        this is a container
+    </div>
+    <span id="time">now this time</span>
+
+    <script>
+        console.log("this is java script timing function");
+
+        //     setTimeout-- > Alllows us to run the
+
+        //     function once after the interval of time
+        //     cleartimeout-- > Alllows us to run the
+
+        //     function repeatrdly after the interval of time
+
+        function greet(name, byeText) {
+            console.log("hello  good morning" + name + "" + byeText);
+        }
+        setTimeout(greet, 5000, " parvez", " take care of your life");
+
+
+        function parvez() {
+            console.log("hi parvez now time is out")
+        }
+        timeout = setTimeout(parvez, 6000);
+        console.log(timeout);
+
+        clearTimeout(timeout)
+
+
+
+
+        // setintelval use korle poti timitng fuction por por por ata shoe korve 
+        // function foysal() {
+        //     console.log("parvez is a heardly work ");
+        // }
+        // setInterval(foysal, 1000);
+
+
+        // setinterval  intervalid secrtion here 
+        // function nasir() {
+        //     console.log("nasir is complete diploma in mechanical engineering ");
+        // }
+        // intervalid = setInterval(nasir, 1000);
+        // clearInterval(intervalid);
+
+        // function displaytime() {
+        //     time = new Date();
+        //     console.log(time);
+        //     document.getElementById('time').innerHTML = time;
+        // }
+        // setInterval(displaytime, 1000);
+        function parvez() {
+            console.log("parvezi is a good boy")
+        }
+        setInterval(parvez, 1000)
+
+
+
+        function nasir() {
+            let parvez = new Date();
+            console.log(parvez);
+            document.getElementById('time').innerHTML = parvez;
+        }
+        setInterval(nasir, 1000);
+    </script>
+</body>
+
+</html>

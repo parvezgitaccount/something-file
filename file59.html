@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            font-size: 20px;
+            background-color: blue;
+            border: 2px solid gray;
+            padding: 34px;
+            text-align: center;
+            font-size: 30px;
+        }
+        
+        .container #parvez {
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        current time is
+        <span id="parvez">show time on dispaly</span>
+    </div>
+
+
+
+    =
+    <script>
+        console.log("this is date and time coding now");
+        let fixed = new Date();
+        console.log(fixed);
+
+
+
+
+        // jodi ami  ai quataction ar betore kono mili sonkka dei tahole start time hote mili secend start hobe 
+        // let dd = new Date();
+        // console.log(dd);
+        // shortcat set timing function
+        // jodi kono date ar din ber korte chaw tahole ai code kaje asbe 
+        let newdate = new Date("1999-09-1");
+        console.log(newdate);
+
+        // new Date(year, month, date, hours, minutes, seconds, millideconds);
+
+        let foysal = new Date(3020, 4, 6, 6, 30, 49, 9)
+        console.log(foysal);
+
+        let yr = new Date().getFullYear();
+        console.log("this is full year", yr);
+
+        let mass = new Date().getMonth();
+        console.log("this is running munth", mass);
+
+        let days = new Date().getDate();
+        console.log("this is  todday date", days);
+
+        let gonta = new Date().getHours();
+        console.log("this runing hours ", gonta);
+
+        let minit = new Date().getMinutes();
+        console.log("this is running minutes", minit);
+
+
+        let seckent = new Date().getSeconds();
+        console.log("this is running second", seckent);
+
+        newdate.setDate(32);
+        newdate.setMinutes(52);
+        console.log(newdate);
+        //   dispaly set this code 
+
+
+        setInterval(updatetime, 1000);
+
+        function updatetime() {
+            parvez.innerHTML = new Date();
+        }
+    </script>
+
+</body>
+
+</html>
