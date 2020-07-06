@@ -27,21 +27,21 @@ const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/html');
 
-    if (url == '/home.html') {
+    if (url == '/') {
         res.end(home);
-    } else if (url == '/about.html') {
+    } else if (url == '/about') {
         res.end(about);
     } else
-    if (url == '/services.html') {
+    if (url == '/services') {
         res.end(services);
-    } else if (url == '/contact.html') {
+    } else if (url == '/contact') {
         res.end(contact);
+
 
     } else {
         res.statusCode = 404;
         res.end("<h1>404 is not found</h1>");
     }
-
 });
 
 server.listen(port, hostname, () => {
