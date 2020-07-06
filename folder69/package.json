@@ -1,0 +1,15 @@
+{
+    "name": "index",
+    "version": "1.0.0",
+    "description": "this is npm first description on visual studio code",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "parvez",
+        "hossen"
+    ],
+    "author": "parvez",
+    "license": "ISC"
+}
